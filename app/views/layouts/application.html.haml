@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title Awesome Rails Title
+    = stylesheet_link_tag    "application", :media => "all" 
+    = javascript_include_tag "application" 
+    = csrf_meta_tags 
+  %body
+    %header
+      %h1 My Awesome Rails App
+      %ul
+        %li= link_to 'Home', root_path
+        %li= link_to 'About Us', about_us_path
+        %li= link_to 'Cats', cats_path
+    #main
+      = yield
+    %footer
+      %p Copywrong 2013
