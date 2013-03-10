@@ -5,7 +5,6 @@ class FirstController < ApplicationController
   # Rails will now automatically load up the view of the same name
   # from the app/views/first folder: index.html.erb.
   def cats
-
   end
   def about_us
     @title = 'About Us'
